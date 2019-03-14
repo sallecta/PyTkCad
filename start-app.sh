@@ -72,7 +72,7 @@ if [ "$1" = ",/anckor-remove" ]; then
 fi
 
 
-echo "starting PyTkCad" >"destop.log.txt"
+echo "starting PyTkCad"
 python PyTkCad.pyw
 
 
