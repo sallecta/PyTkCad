@@ -39,9 +39,9 @@ create_contents() : creates the contents of the tooltip window (by default a Tki
 import sys
 ver = sys.version_info[0]
 if ver == 2:
-    from Tkinter import*
+    import Tkinter
 else:
-    from tkinter import*
+    import tkinter
 
 class ToolTip:
     def __init__(self, master, text='Your text here', delay=1500, **opts):
