@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=PyTkCad
+GenericName=PyTkCad
+Comment=PyTkCad
+Categories=Graphics;
+StartupNotify=true
+Exec=python /media/data/development/python/git_ptojects_python/PyTkCad/PyTkCad.pyw
+Path=/media/data/development/python/git_ptojects_python/PyTkCad
+Icon=/media/data/development/python/git_ptojects_python/PyTkCad/media/PyTkCad_icon_main.png
+Terminal=false
