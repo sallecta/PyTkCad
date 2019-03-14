@@ -115,7 +115,7 @@ class Graphics:
         
         
         self.old_func = 'self.copyEvent()'
-        self.prog_version = 'SAMoCAD - v0.0.8.5 alpha'
+        self.prog_version = 'PyTkCad'
         self.old_text = self.prog_version
         self.old_offset = 0
         self.old_fillet_R = 0

@@ -43,7 +43,8 @@ class Gui:
         #self.button_func_color = 'grey'#'orange'
 
         self.master1 = master1
-        self.ico = PhotoImage(file = os.path.join(appPath, 'res', 'icon2.gif'))
+        #self.ico = PhotoImage(file = os.path.join(appPath, 'res', 'icon2.gif'))
+        self.ico = PhotoImage(file = os.path.join(appPath, 'media', 'PyTkCad_icon_main.png'))
         self.master1.tk.call('wm', 'iconphoto', self.master1._w, self.ico) #Иконка
         self.master1.title(self.parent.prog_version + ' - ' + 'New draft')
         self.master1.geometry('1024x720+0+0')
@@ -116,16 +117,18 @@ class Gui:
 
 #Текст
         self.Habout = u"""
-Programm SAMoCAD is open software
-and designed to create simple drawings
+PyTkCad  
+Version 0.1
 
-Version - 0.0.8.5 alfa
+Forked from VVS1864/SAMoCAD version 0.0.8.5 alfa
 
+Copyright 2019 - Alexander Gribkov
 Copyright 2014 - VVS1864
 
 Apache License, Version 2.0.
 """
         self.lic  = u"""
+Copyright 2019 - Alexander Gribkov        
 Copyright 2014 Vlad Simonov
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -399,7 +402,7 @@ limitations under the License.
         self.entry_size_f.bind("<FocusOut>", size_f_ok)
 
     def about(self, event = None):
-        self.imag = PhotoImage(file = os.path.join(appPath, 'res', 'icon3.gif'))
+        self.imag = PhotoImage(file = os.path.join(appPath, 'media', 'PyTkCad_icon_main100.png'))
         eroot = Toplevel()
         eroot.title('About programm')
         eroot.resizable(width=FALSE, height=FALSE)
