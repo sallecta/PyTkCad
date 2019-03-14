@@ -1368,9 +1368,7 @@ class Graphics:
 #выход из редактора
     def exitMethod(self):
         self.save_change()
-        e = self.donate()
-        if e != 3:
-            self.master1.destroy()
+        self.master1.destroy()
 
     #please, donate!
 
@@ -1406,48 +1404,6 @@ class Graphics:
         but = Button(eroot, text = 'OK', command = eroot.destroy)
         but.grid(row=3, column = 1, sticky = 'e', padx = 10, pady = 10)
 
-    def donate(self):
-        e = randint(2, 5)
-        if e == 3:
-              eroot = Toplevel()
-              eroot.title('Please, donate!')
-              self.don = PhotoImage(file = os.path.join(self.appPath, 'res', 'don.gif'))
-              eroot.tk.call('wm', 'iconphoto', eroot._w, self.don)
-              eroot.resizable(width=FALSE, height=FALSE)
-              from locale import getdefaultlocale
-              lang = getdefaultlocale()
-              if lang[0][0:2] != 'ru':
-                  donate_text = '''
-            SAMoCAD - open sours program,
-            so developers want to eat.
-
-            You can help the project.
-            '''
-                  feed = 'Feed :-)'
-                  away = 'Get away from me!'
-              else:
-                  donate_text = '''
-            SAMoCAD - бесплатная програма,
-            поэтому разработчики хотят кушать.
-
-            Вы можете помочь проекту.
-            '''
-                  feed = 'Накормить'
-                  away = 'Отстаньте от меня!'
-
-              l_donate = Label(eroot, justify = LEFT, text = donate_text)
-
-              self.imag = PhotoImage(file = os.path.join(self.appPath, 'res', 'icon3.gif'))
-
-              but = Button(eroot, text = feed, command = self.d)
-              but2 = Button(eroot, text = away, command = self.master1.destroy)
-              ca = Canvas(eroot, width = 100, height = 100)
-              ca.create_image(0,0,anchor=NW,image = self.imag)
-              ca.grid(row=0, column = 0, rowspan = 2, padx = 5, pady = 5)
-              l_donate.grid(row=0, column = 1,columnspan = 2, padx = 10, pady = 10)
-              but.grid(row=1, column = 1, padx = 10, pady = 10)
-              but2.grid(row=1, column = 2, padx = 10, pady = 10)
-        return e
 
 
 #РИСОВАНИЕ ОБЪЕКТОВ - СОБЫТИЯ
