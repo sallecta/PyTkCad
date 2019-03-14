@@ -1,3 +1,11 @@
+=======
+
+Orginal Readme by VVS1864
+
+https://github.com/VVS1864/SAMoCAD
+
+begin
+
 SAMoCAD
 =======
 
@@ -9,3 +17,11 @@ Program requires no installation, but you need install Python 2.7 or later on yo
 Run file SAMoCAD.pyw to run the program.
 
 Bug, errors and wishes to develop sent to simonovsen@yandex.ru 
+
+=======
+
+Orginal Readme by VVS1864
+
+https://github.com/VVS1864/SAMoCAD
+
+end.
