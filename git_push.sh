@@ -1,5 +1,6 @@
 #!/bin/bash
 
+git status
 echo Enter commit message:
 read commmitMessage
 if [ "$commmitMessage" = "" ]
@@ -10,5 +11,5 @@ echo commit message is \"$commmitMessage\"
 
 git add *
 git status
-git commit --message=$commmitMessage
+git commit --message="$commmitMessage"
 git push
