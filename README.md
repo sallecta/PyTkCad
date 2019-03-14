@@ -1,10 +1,11 @@
-=======
 
 Orginal Readme by VVS1864
 
 https://github.com/VVS1864/SAMoCAD
 
 begin
+
+-------
 
 SAMoCAD
 =======
@@ -18,7 +19,7 @@ Run file SAMoCAD.pyw to run the program.
 
 Bug, errors and wishes to develop sent to simonovsen@yandex.ru 
 
-=======
+-------
 
 Orginal Readme by VVS1864
 
